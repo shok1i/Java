@@ -1,7 +1,7 @@
 package Work_2.Number_2;
 
 public class Ball {
-    double X = 0.0, Y = 0.0;
+    private double X = 0.0, Y = 0.0;
 
     public Ball(double x, double y) {  };
 
