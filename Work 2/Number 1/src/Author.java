@@ -8,4 +8,18 @@ public class Author {
         this.gender = gender;
     }
 
+    public String getName(){
+        return this.name;
+    }
+
+    public String getInbox (){
+        return this.inbox;
+    }
+
+    public String setInbox (String inbox){
+        Inbox = inbox;
+    }
+
+    
+
 }
