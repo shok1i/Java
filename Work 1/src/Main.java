@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class Main
 {
-    public static void main(String[] args) { num_3(); }
+    public static void main(String[] args) {
+    }
 
     // Задание 3
     private static void num_3 () {
@@ -58,7 +59,8 @@ public class Main
     }
 
     // Задание 5
-    private static void num_5 () {
+    private static void num_5 (String[] args) {
+        for (String arg : args) System.out.println(arg);
     }
 
     // Задание 6
@@ -68,7 +70,6 @@ public class Main
         for (int i = 1; i <= 10; i++)
         {
             sum += (double) 1 / i;
-            // System.out.println(1/i);
             System.out.format("\nПозиция в гармоническом ряду " + i + "\tЗначение "+ "%.5f", sum);
         }
 
