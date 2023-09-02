@@ -1,9 +1,12 @@
+package Work_1;
+
 // Импорт библиотек
 import java.util.Scanner;
 
 public class Main
 {
     public static void main(String[] args) {
+        num_3();
     }
 
     // Задание 3
