@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main
 {
     public static void main(String[] args) {
-        num_3();
+        num_7();
     }
 
     // Задание 3
@@ -30,7 +30,7 @@ public class Main
         System.out.format("Среднее значение " + "%.2f", average);
     }
 
-    // Задание 5
+    // Задание 4
     private static void num_4 () {
         int sum = 0, i = 0, mi, ma;
         Scanner scan = new Scanner(System.in);
