@@ -14,8 +14,6 @@ public class Start {
             double r = scan.nextInt();
             tmp.addElement(x, y, r);
         }
-
-
         System.out.print("\n\n");
         tmp.OutPut();
     }
