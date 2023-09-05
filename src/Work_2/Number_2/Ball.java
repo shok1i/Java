@@ -17,8 +17,7 @@ public class Ball {
     public void move (double xMove, double yMove) { X += xMove; Y += yMove; }
 
     public String toString(){
-        return  "Текущий x:\t" + getX() + "\n" +
-                "Текущий y:\t" + getY() + "\n";
+        return  "Текущая позиция по x и y\t" + X + " // " + Y;
     }
 
 }
