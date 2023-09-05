@@ -1,12 +1,16 @@
-package Work_2.Number_4_REW;
+package Work_2.Number_4;
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Shop {
+
+interface adding{
+    void Add();
+}
+
+public class Shop implements adding {
+
+    private Scanner scan = new Scanner(System.in);
     private final ArrayList<String> PC_name = new ArrayList<>();
-
-    public void addElement (String pc_name) {
-        PC_name.add(pc_name);
-    }
 
     public void delElement (String pc_name) {
         int pos = searchPC_name(pc_name);
@@ -32,6 +36,11 @@ public class Shop {
         String tmp = "";
         for (String name : PC_name){ tmp += name + " // "; }
         return tmp;
+    }
+
+    public void Add() {
+        System.out.print("Добавить PC с именем: ");
+        PC_name.add(scan.nextLine());
     }
 
 }
