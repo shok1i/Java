@@ -10,4 +10,14 @@ public class Croupier {
             cardHolder.delCard(position);
         }
     }
+
+    public String ToStr(){
+        String tmp = "";
+        for (Cards index : arm)
+        {
+            tmp += index.getDignity() + "" + index.getSuit() + " | ";
+        }
+        return tmp;
+    }
+
 }

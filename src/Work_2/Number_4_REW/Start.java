@@ -1,6 +1,5 @@
-package Work_2.Number_4;
+package Work_2.Number_4_REW;
 
-import java.util.Scanner;
 public class Start {
 
     public static void main(String[] args) {

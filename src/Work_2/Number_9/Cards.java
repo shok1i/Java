@@ -2,14 +2,14 @@ package Work_2.Number_9;
 
 public class Cards {
     private char Suit;
-    private char Dignity;
+    private String Dignity;
 
-    Cards(char suit, char dignity) {
+    Cards(char suit, String dignity) {
         Suit = suit;
         Dignity = dignity;
     }
 
-    public char getDignity() {
+    public String getDignity() {
         return Dignity;
     }
 

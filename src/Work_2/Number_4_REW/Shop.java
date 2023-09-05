@@ -1,4 +1,4 @@
-package Work_2.Number_4;
+package Work_2.Number_4_REW;
 import java.util.ArrayList;
 
 public class Shop {
