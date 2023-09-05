@@ -1,6 +1,6 @@
 package Work_2.Number_7;
 
-public class Bookshelf extends Book {
+public class Bookshelf{
     // ArrayList <Book> shelf = new ArrayList<>();
 
     private Book[] shelf = new Book[256];
