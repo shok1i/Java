@@ -89,7 +89,8 @@ public class Main
         System.out.print("Ввод числа " + "\t");
         int number = scan.nextInt();
 
-        System.out.print("Значение числа фибоначи для введенного числа " + factorial(number));
+        if (number > 28) System.out.println("Введеное число вызывает переполнение");
+        else System.out.print("Значение числа фибоначи для введенного числа " + factorial(number));
     }
 
 }

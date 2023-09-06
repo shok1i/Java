@@ -1,6 +1,6 @@
 package Work_2.Number_5;
 
-public class Dog {
+public class    Dog {
     private String Name;
     private int Age;
 

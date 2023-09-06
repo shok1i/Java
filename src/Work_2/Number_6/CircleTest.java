@@ -16,8 +16,10 @@ public class CircleTest {
 
         System.out.println(First.circleCheck(Second));
 
-        System.out.println("Длинна первой окружности: " + First.circleLength());
-        System.out.println("площадь первой окружности: " + First.circleArea());
-        System.out.println("Периметр первой окружности: " + First.circlePerimeter());
+        System.out.format("Длинна первой окружности: " + "%.2f", First.circleLength());
+        System.out.println();
+        System.out.format("площадь первой окружности: " + "%.2f", First.circleArea());
+        System.out.println();
+        System.out.format("Периметр первой окружности: " + "%.2f", First.circlePerimeter());
     }
 }

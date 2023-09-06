@@ -20,7 +20,7 @@ public class Poker {
 
         ArrayList<Player> player = new ArrayList<>();
 
-        System.out.println("Введите количество игроков максимально количество игроков 10");
+        System.out.print("Введите количество игроков максимально количество игроков 10: ");
         Scanner scan = new Scanner(System.in);
         int numberPlayers = scan.nextInt();
         for (int i = 0; i < numberPlayers; i++){

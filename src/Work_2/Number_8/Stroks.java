@@ -2,18 +2,23 @@ package Work_2.Number_8;
 
 public class Stroks {
     public static void main(String[] args) {
-        String[]  DoubleFuckArray = {"Pipi", "Pupu",  "PiiiPii", "PuuPuu", "PiiPuu", "123", "312"};
+        String[]  strArray = {"Pipi", "Pupu",  "PiiiPii", "PuuPuu", "PiiPuu", "123", "312"};
 
-        for (int i = 0; i < DoubleFuckArray.length / 2; i++){
+        System.out.println("Первоначальная строка");
+        for (String index : strArray)
+            System.out.print(index + " ");
 
-            String tmp_1 = DoubleFuckArray[i];
-            String tmp_2 = DoubleFuckArray[DoubleFuckArray.length - 1 - i];
+        for (int i = 0; i < strArray.length / 2; i++){
 
-            DoubleFuckArray[DoubleFuckArray.length - 1] = tmp_1;
-            DoubleFuckArray[i] = tmp_2;
+            String tmp_1 = strArray[i];
+            String tmp_2 = strArray[strArray.length - i - 1];
+
+            strArray[strArray.length - i - 1] = tmp_1;
+            strArray[i] = tmp_2;
         }
 
-        for (String index : DoubleFuckArray)
-            System.out.println(index);
+        System.out.println("\nСтрока после переворота");
+        for (String index : strArray)
+            System.out.print(index + " ");
     }
 }
