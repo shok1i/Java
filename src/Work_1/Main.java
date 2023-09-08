@@ -53,8 +53,8 @@ public class Main
         do
         {
             i++;
-            if (ma > array[i]) ma = array[i];
-            if (mi < array[i]) mi = array[i];
+            if (ma < array[i]) ma = array[i];
+            if (mi > array[i]) mi = array[i];
 
         } while (i < array.length - 1);
 
@@ -73,7 +73,7 @@ public class Main
         for (int i = 1; i <= 10; i++)
         {
             sum += (double) 1 / i;
-            System.out.format("\nПозиция в гармоническом ряду " + i + "\tЗначение "+ "%.5f", sum);
+            System.out.format("\nПозиция в гармоническом ряду " + i + "\tЗначение "+ "%.2f", sum);
         }
 
     }
@@ -89,8 +89,11 @@ public class Main
         System.out.print("Ввод числа " + "\t");
         int number = scan.nextInt();
 
-        if (number > 28) System.out.println("Введеное число вызывает переполнение");
-        else System.out.print("Значение числа фибоначи для введенного числа " + factorial(number));
+        if (number == 0) { System.out.print("Значение числа акториала для введенного числа " + 1); }
+        else if (number > 27) { System.out.println("Введеное число вызывает переполнение"); }
+        else System.out.print("Значение числа акториала для введенного числа " + factorial(number));
+
+
     }
 
 }

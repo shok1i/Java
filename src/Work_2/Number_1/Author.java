@@ -25,7 +25,7 @@ public class Author {
     public char getGender () {
         return this.Gender;
     }
-
+    @Override
     public String toString(){
         return  "Имя автора\t\t:\t" + getName() + "\n" +
                 "Почта автора\t:\t" + getInbox() + "\n" +
