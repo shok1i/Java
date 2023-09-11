@@ -1,9 +1,10 @@
-package Work_3.Number_2;
+package Work_3.Number_3;
 
 public class Square extends Rectangle {
     protected double Side;
 
     public Square(){}
+    public Square(double side) { Side = side; }
     public Square(double side, String color, boolean filled){
         Side = side; setLength(side);
         setColor(color); setFilled(filled);
