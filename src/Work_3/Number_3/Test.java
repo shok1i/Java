@@ -42,6 +42,7 @@ public class Test {
         System.out.println(r2);
         System.out.println(r2.getArea());
         System.out.println(r2.getColor());
+        //
         // System.out.println(r2.getSide());
         System.out.println(r2.getLength());
 

@@ -13,6 +13,8 @@ public class Rectangle extends Shape {
     public double getWidth() { return Width; }
     public void setWidth(double width) { Width = width; }
 
+
+
     @Override
     public double getArea() { return Width * Length; }
 
