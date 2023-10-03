@@ -1,4 +1,4 @@
-package Work_10__doDoc;
+package Work_10;
 
 import java.util.Scanner;
 

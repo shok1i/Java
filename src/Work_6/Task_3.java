@@ -1,4 +1,4 @@
-package Work_6__doDoc;
+package Work_6;
 
 import java.util.ArrayList;
 import java.util.List;

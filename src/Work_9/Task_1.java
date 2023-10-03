@@ -1,4 +1,4 @@
-package Work_9__doDoc;
+package Work_9;
 
 interface Nameable {
     void getName();

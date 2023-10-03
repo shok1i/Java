@@ -1,4 +1,4 @@
-package Work_6__doDoc;
+package Work_6;
 
 abstract class Dog {
     private String Breed;

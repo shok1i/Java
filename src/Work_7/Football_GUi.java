@@ -1,4 +1,4 @@
-package Work_7__doDoc;
+package Work_7;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
