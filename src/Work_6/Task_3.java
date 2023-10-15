@@ -23,18 +23,18 @@ class Sofa extends Furniture{
 
     @Override
     public String toString() {
-        return "Sofa: { Cost: " + getCost() + ", Weight: " + getWeight() + "}";
+        return "Sofa:  \n\tCost: " + getCost() + ", Weight: " + getWeight();
     }
 }
 
-class Chair extends Furniture{
-    public Chair(int weight, int cost){
+class Chair extends Furniture {
+    public Chair(int weight, int cost) {
         super("Chair", weight, cost);
     }
 
     @Override
     public String toString() {
-        return "Chair: { Cost: " + getCost() + ", Weight: " + getWeight() + "}";
+        return "Chair: \n\tCost: " + getCost() + ", Weight: " + getWeight();
     }
 }
 
@@ -44,7 +44,7 @@ public class Task_3 {
 
         Shop.add(new Sofa(120, 20000));
         Shop.add(new Chair(10, 3000));
-
-        System.out.println(Shop);
+        for (var item : Shop)
+            System.out.println(item);
     }
 }
