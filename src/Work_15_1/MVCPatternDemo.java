@@ -1,4 +1,4 @@
-package task151;
+package Work_15_1;
 
 public class MVCPatternDemo {
     public static void main(String[] args) {
