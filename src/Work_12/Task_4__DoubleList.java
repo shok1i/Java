@@ -107,7 +107,7 @@ public class Task_4__DoubleList {
         }
 
         System.out.println("============{ END }============");
-        if (P_1.Head == null)
+        if (P_1.Head != null)
             System.out.println("Won by the second player after " + (round - 1) + " rounds");
         else
             System.out.println("Won by the first player after " + (round - 1) + " rounds");
