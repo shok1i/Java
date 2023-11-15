@@ -8,10 +8,10 @@ public class Task_1 {
     public static File file = new File("src/Work_13/text.txt");
 
     public static void main(String[] args) {
-        Write();
-        Read();
+//        Write();
+//        Read();
         Append();
-        Read();
+//        Read();
     }
 
     static void Write (){
