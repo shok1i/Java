@@ -60,7 +60,7 @@ public class Task_2__Queue {
         }
 
         System.out.println("============{ END }============");
-        if (p_1.isEmpty())
+        if (!p_1.isEmpty())
             System.out.println("Won by the second player after " + (round - 1) + " rounds");
         else
             System.out.println("Won by the first player after " + (round - 1) + " rounds");

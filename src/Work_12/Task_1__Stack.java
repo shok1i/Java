@@ -42,7 +42,6 @@ public class Task_1__Stack {
 //            for (var elem : p_2)
 //                System.out.print( elem + " ");
 //            System.out.println();
-
             if (p_1.peek() > p_2.peek() || p_1.peek() == 0 && p_2.peek() == 9){
 //                System.out.println("Player 1 win the round");
 
@@ -63,7 +62,6 @@ public class Task_1__Stack {
                 while (!temp.isEmpty())
                     p_2.push(temp.pop());
             }
-
             round++;
             if (round == 106)
             {
@@ -73,9 +71,10 @@ public class Task_1__Stack {
         }
 
         System.out.println("============{ END }============");
-        if (p_1.isEmpty())
+        if (!p_1.isEmpty())
             System.out.println("Won by the second player after " + (round - 1) + " rounds");
         else
             System.out.println("Won by the first player after " + (round - 1) + " rounds");
+
     }
 }
