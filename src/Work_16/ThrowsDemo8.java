@@ -1,6 +1,5 @@
-package task16;
+package Work_16;
 
-import java.security.spec.ECField;
 import java.util.Scanner;
 
 public class ThrowsDemo8 {

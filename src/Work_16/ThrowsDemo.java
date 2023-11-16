@@ -1,4 +1,4 @@
-package task16;
+package Work_16;
 import java.lang.*;
 public class ThrowsDemo{
     public void getDetails(String key) {

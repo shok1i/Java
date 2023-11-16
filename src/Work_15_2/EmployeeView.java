@@ -1,4 +1,4 @@
-package task152;
+package Work_15_2;
 
 public class EmployeeView {
     public void printSalary(Employee em){

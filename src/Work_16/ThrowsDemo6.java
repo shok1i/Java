@@ -1,4 +1,4 @@
-package task16;
+package Work_16;
 
 public class ThrowsDemo6 {
     public void printMessage(String key) {
