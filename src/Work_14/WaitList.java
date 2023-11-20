@@ -1,6 +1,7 @@
 package Work_14;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentLinkedQueue;
+
 public class WaitList<E> implements IWaitList<E> {
     protected ConcurrentLinkedQueue<E> content;
     WaitList(){this.content = new ConcurrentLinkedQueue<>();}

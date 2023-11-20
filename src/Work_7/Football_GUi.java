@@ -74,7 +74,7 @@ public class Football_GUi extends JFrame{
     }
 
     public static void main(String[]args){
-        Old_Work_4.MainFrame mainFrame = new Old_Work_4.MainFrame();
+        Football_GUi mainFrame = new Football_GUi();
         mainFrame.setVisible(true);
     }
 }
