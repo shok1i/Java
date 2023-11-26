@@ -20,7 +20,7 @@ public class task1 {
         System.out.println("All good!");
     }
     public static void validateINN(String INN) throws INNError {
-        if(INN.length() != 12 && INN.length() != 10){
+        if(INN.length() != 10){
             throw new INNError("INN Error, not enough length");
         }
         for(char ch : INN.toCharArray()){
