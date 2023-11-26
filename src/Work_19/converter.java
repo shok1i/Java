@@ -10,7 +10,6 @@ public class converter {
         }
         return list;
     }
-
     public static void main(String[] args) {
         String[] stringArray = {"Hello", "World"};
         List<String> stringList = convertArrayToList(stringArray);
