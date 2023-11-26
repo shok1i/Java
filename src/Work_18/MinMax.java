@@ -1,5 +1,4 @@
 package Work_18;
-
 public class MinMax<T extends Comparable<T>> {
     private T[] array;
 

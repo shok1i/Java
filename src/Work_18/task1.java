@@ -3,7 +3,7 @@ package Work_18;
 import java.io.Serializable;
 
 public class task1 {
-
+    
 }
 
 class Animal implements Serializable{
