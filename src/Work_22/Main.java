@@ -1,12 +1,26 @@
 package Work_22;
 
+
 // Интерфейс стула
 interface chair {
     void sit();
 }
+interface AbstractChairFactory{
+    Victorianchair createVictorianChair();
+    Magicchair createMagicChair();
+    Funcionalchair createFunctionalChair();
+}
 
 // Реализация Викторианского стула
-class Victorianchair implements chair {
+class Victorianchair extends ChairsFabric implements chair {
+    private int age;
+
+    public int getAge() {
+        return age;
+    }
+    public Victorianchair(int age){
+        this.age = age;
+    }
     @Override
     public void sit() {
         System.out.println("Сел на Викторианский стул.");
@@ -14,7 +28,10 @@ class Victorianchair implements chair {
 }
 
 // Реализация Многофункционального стула
-class Funcionalchair implements chair {
+class Funcionalchair extends ChairsFabric implements chair {
+    public int sum (int a, int b){
+        return a + b;
+    }
     @Override
     public void sit() {
         System.out.println("Сел на Многофункциональный стул.");
@@ -22,7 +39,10 @@ class Funcionalchair implements chair {
 }
 
 // Реализация Магического стула
-class Magicchair implements chair {
+class Magicchair extends ChairsFabric implements chair {
+    public void doMagic(){
+        System.out.println("Maaaagic");
+    }
     @Override
     public void sit() {
         System.out.println("Сел на Магический стул.");
@@ -30,56 +50,45 @@ class Magicchair implements chair {
 }
 
 // Абстрактная фабрика для создания стульев
-abstract class ChairsFabric {
-    public abstract chair createChair();
-}
+class ChairsFabric implements AbstractChairFactory{
 
-// Конкретная фабрика для Викторианских стульев
-class VectorialChairsFabric extends ChairsFabric {
     @Override
-    public chair createChair() {
-        return new Victorianchair();
+    public Victorianchair createVictorianChair() {
+        return new Victorianchair(1);
     }
-}
 
-// Конкретная фабрика для Многофункциональных стульев
-class FunctionalChairsFabric extends ChairsFabric {
     @Override
-    public chair createChair() {
+    public Magicchair createMagicChair() {
+        return new Magicchair();
+    }
+
+    @Override
+    public Funcionalchair createFunctionalChair() {
         return new Funcionalchair();
     }
 }
 
-// Конкретная фабрика для Магических стульев
-class MagicChairsFabric extends ChairsFabric {
-    @Override
-    public chair createChair() {
-        return new Magicchair();
+class Client{
+    public chair Chair;
+    public void sit(){
+        Chair.sit();
     }
-}
 
-// Клиент, который использует chair в методе Sit
-class Client {
-    public static void Sit(chair ch) {
-        System.out.println("Клиент сел на стул.");
-        ch.sit();
+    public void setChair(chair chair) {
+        Chair = chair;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        ChairsFabric VectorialChairsFabric = new VectorialChairsFabric();
-        chair vc = VectorialChairsFabric.createChair();
-
-        ChairsFabric FunctionalChairsFabric = new FunctionalChairsFabric();
-        chair mc = FunctionalChairsFabric.createChair();
-
-        ChairsFabric MagicChairsFabric = new MagicChairsFabric();
-        chair magc = MagicChairsFabric.createChair();
-
         Client cl = new Client();
-        Client.Sit(vc);
-        Client.Sit(mc);
-        Client.Sit(magc);
+        ChairsFabric cf = new ChairsFabric();
+        Magicchair mc = cf.createMagicChair();
+        Funcionalchair fc = cf.createFunctionalChair();
+        Victorianchair vc = cf.createVictorianChair();
+
+        cl.setChair(mc);cl.sit();
+        cl.setChair(fc);cl.sit();
+        cl.setChair(vc);cl.sit();
     }
 }
